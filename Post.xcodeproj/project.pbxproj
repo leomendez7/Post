@@ -7,26 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC8A0A72261E85F400221218 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A71261E85F400221218 /* DataService.swift */; };
+		EC8A0A7B261E8E5400221218 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A7A261E8E5400221218 /* MainTableViewCell.swift */; };
+		EC8A0A7E261E90C200221218 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A7D261E90C200221218 /* MainDataSource.swift */; };
+		EC8A0A82261E972B00221218 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A81261E972B00221218 /* String.swift */; };
+		EC8A0A87261EB7F500221218 /* PostDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A86261EB7F500221218 /* PostDefault.swift */; };
+		EC8A0A8B261EBBF300221218 /* BoolTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0A8A261EBBF300221218 /* BoolTransform.swift */; };
 		ECD835B1261D470F0080FC96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835B0261D470F0080FC96 /* AppDelegate.swift */; };
 		ECD835B3261D470F0080FC96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835B2261D470F0080FC96 /* SceneDelegate.swift */; };
 		ECD835B5261D470F0080FC96 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835B4261D470F0080FC96 /* MainViewController.swift */; };
 		ECD835B8261D470F0080FC96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD835B6261D470F0080FC96 /* Main.storyboard */; };
 		ECD835BA261D47120080FC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD835B9261D47120080FC96 /* Assets.xcassets */; };
 		ECD835BD261D47120080FC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD835BB261D47120080FC96 /* LaunchScreen.storyboard */; };
-		ECD835DA261D498F0080FC96 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835D9261D498F0080FC96 /* Router.swift */; };
-		ECD835DD261D49960080FC96 /* APIQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835DC261D49960080FC96 /* APIQuery.swift */; };
-		ECD835E0261D499D0080FC96 /* RequestHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835DF261D499D0080FC96 /* RequestHeaders.swift */; };
-		ECD835E3261D49A60080FC96 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835E2261D49A60080FC96 /* APIError.swift */; };
-		ECD835E6261D49AE0080FC96 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835E5261D49AE0080FC96 /* APIConfig.swift */; };
-		ECD835E9261D49B40080FC96 /* APICachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835E8261D49B40080FC96 /* APICachePolicy.swift */; };
 		ECD835EE261D49EB0080FC96 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835EC261D49EB0080FC96 /* Default.swift */; };
-		ECD835EF261D49EB0080FC96 /* DefaultServerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD835ED261D49EB0080FC96 /* DefaultServerType.swift */; };
 		ECD835F3261D4A390080FC96 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ECD835F2261D4A390080FC96 /* Realm */; };
 		ECD835F5261D4A390080FC96 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECD835F4261D4A390080FC96 /* RealmSwift */; };
 		ECD835F9261D4A5E0080FC96 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECD835F8261D4A5E0080FC96 /* ObjectMapper */; };
 		ECD835FD261D4A770080FC96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECD835FC261D4A770080FC96 /* Alamofire */; };
 		ECD83601261D4CDC0080FC96 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD83600261D4CDC0080FC96 /* PostStore.swift */; };
-		ECD83604261D4CF20080FC96 /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD83603261D4CF20080FC96 /* PostRouter.swift */; };
 		ECD83608261D4F4F0080FC96 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD83607261D4F4F0080FC96 /* Post.swift */; };
 		ECD8360E261D54050080FC96 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = ECD8360D261D54050080FC96 /* Lottie */; };
 		ECD83611261D54940080FC96 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD83610261D54940080FC96 /* loading.json */; };
@@ -38,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC8A0A71261E85F400221218 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		EC8A0A7A261E8E5400221218 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		EC8A0A7D261E90C200221218 /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		EC8A0A81261E972B00221218 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EC8A0A86261EB7F500221218 /* PostDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDefault.swift; sourceTree = "<group>"; };
+		EC8A0A8A261EBBF300221218 /* BoolTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTransform.swift; sourceTree = "<group>"; };
 		ECD835AD261D470F0080FC96 /* Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Post.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD835B0261D470F0080FC96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD835B2261D470F0080FC96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,16 +50,8 @@
 		ECD835B9261D47120080FC96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD835BC261D47120080FC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECD835BE261D47120080FC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECD835D9261D498F0080FC96 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		ECD835DC261D49960080FC96 /* APIQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIQuery.swift; sourceTree = "<group>"; };
-		ECD835DF261D499D0080FC96 /* RequestHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHeaders.swift; sourceTree = "<group>"; };
-		ECD835E2261D49A60080FC96 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		ECD835E5261D49AE0080FC96 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
-		ECD835E8261D49B40080FC96 /* APICachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICachePolicy.swift; sourceTree = "<group>"; };
 		ECD835EC261D49EB0080FC96 /* Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
-		ECD835ED261D49EB0080FC96 /* DefaultServerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultServerType.swift; sourceTree = "<group>"; };
 		ECD83600261D4CDC0080FC96 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
-		ECD83603261D4CF20080FC96 /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
 		ECD83607261D4F4F0080FC96 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ECD83610261D54940080FC96 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		ECD83614261D55200080FC96 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +77,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC8A0A77261E8C5F00221218 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A0A78261E8C8800221218 /* TableView */,
+				ECD835B4261D470F0080FC96 /* MainViewController.swift */,
+				ECD83623261D57120080FC96 /* MainController.swift */,
+				ECD835B6261D470F0080FC96 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EC8A0A78261E8C8800221218 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A0A7A261E8E5400221218 /* MainTableViewCell.swift */,
+				EC8A0A7D261E90C200221218 /* MainDataSource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		EC8A0A80261E970C00221218 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A0A81261E972B00221218 /* String.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		EC8A0A89261EBBE700221218 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A0A8A261EBBF300221218 /* BoolTransform.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		ECD835A4261D470F0080FC96 = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +164,7 @@
 		ECD835C7261D476C0080FC96 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ECD835B4261D470F0080FC96 /* MainViewController.swift */,
-				ECD83623261D57120080FC96 /* MainController.swift */,
-				ECD835B6261D470F0080FC96 /* Main.storyboard */,
+				EC8A0A77261E8C5F00221218 /* Main */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -159,6 +189,8 @@
 		ECD835CA261D47980080FC96 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A0A89261EBBE700221218 /* Mapper */,
+				EC8A0A80261E970C00221218 /* String */,
 				ECD835CB261D479E0080FC96 /* API */,
 				ECD8361B261D55E60080FC96 /* Layout */,
 				ECD83617261D555E0080FC96 /* Styles */,
@@ -170,62 +202,9 @@
 		ECD835CB261D479E0080FC96 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				ECD835D1261D47D50080FC96 /* Cache */,
-				ECD835D0261D47CE0080FC96 /* Confing */,
-				ECD835CF261D47BE0080FC96 /* Error */,
-				ECD835CE261D47B50080FC96 /* Extensions */,
-				ECD835CD261D47AE0080FC96 /* Query */,
-				ECD835CC261D47A70080FC96 /* Router */,
+				EC8A0A71261E85F400221218 /* DataService.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		ECD835CC261D47A70080FC96 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835D9261D498F0080FC96 /* Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		ECD835CD261D47AE0080FC96 /* Query */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835DC261D49960080FC96 /* APIQuery.swift */,
-			);
-			path = Query;
-			sourceTree = "<group>";
-		};
-		ECD835CE261D47B50080FC96 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835DF261D499D0080FC96 /* RequestHeaders.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		ECD835CF261D47BE0080FC96 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835E2261D49A60080FC96 /* APIError.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		ECD835D0261D47CE0080FC96 /* Confing */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835E5261D49AE0080FC96 /* APIConfig.swift */,
-			);
-			path = Confing;
-			sourceTree = "<group>";
-		};
-		ECD835D1261D47D50080FC96 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				ECD835E8261D49B40080FC96 /* APICachePolicy.swift */,
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		ECD835D2261D47F90080FC96 /* Launch */ = {
@@ -249,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				ECD835EC261D49EB0080FC96 /* Default.swift */,
-				ECD835ED261D49EB0080FC96 /* DefaultServerType.swift */,
+				EC8A0A86261EB7F500221218 /* PostDefault.swift */,
 			);
 			path = DefaultStore;
 			sourceTree = "<group>";
@@ -257,7 +236,6 @@
 		ECD835FF261D4CA70080FC96 /* PostStore */ = {
 			isa = PBXGroup;
 			children = (
-				ECD83603261D4CF20080FC96 /* PostRouter.swift */,
 				ECD83600261D4CDC0080FC96 /* PostStore.swift */,
 			);
 			path = PostStore;
@@ -372,25 +350,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8A0A7B261E8E5400221218 /* MainTableViewCell.swift in Sources */,
 				ECD83619261D55680080FC96 /* ColorScheme.swift in Sources */,
-				ECD835EF261D49EB0080FC96 /* DefaultServerType.swift in Sources */,
-				ECD835DA261D498F0080FC96 /* Router.swift in Sources */,
-				ECD835DD261D49960080FC96 /* APIQuery.swift in Sources */,
-				ECD835E9261D49B40080FC96 /* APICachePolicy.swift in Sources */,
-				ECD835E6261D49AE0080FC96 /* APIConfig.swift in Sources */,
 				ECD83624261D57120080FC96 /* MainController.swift in Sources */,
 				ECD83615261D55200080FC96 /* BaseViewController.swift in Sources */,
 				ECD83608261D4F4F0080FC96 /* Post.swift in Sources */,
 				ECD83601261D4CDC0080FC96 /* PostStore.swift in Sources */,
-				ECD83604261D4CF20080FC96 /* PostRouter.swift in Sources */,
 				ECD835B5261D470F0080FC96 /* MainViewController.swift in Sources */,
+				EC8A0A8B261EBBF300221218 /* BoolTransform.swift in Sources */,
+				EC8A0A87261EB7F500221218 /* PostDefault.swift in Sources */,
 				ECD835EE261D49EB0080FC96 /* Default.swift in Sources */,
 				ECD835B1261D470F0080FC96 /* AppDelegate.swift in Sources */,
 				ECD8361D261D55EC0080FC96 /* ViewLayout.swift in Sources */,
 				ECD83620261D560A0080FC96 /* KeyboardAwareConstraint.swift in Sources */,
-				ECD835E0261D499D0080FC96 /* RequestHeaders.swift in Sources */,
 				ECD835B3261D470F0080FC96 /* SceneDelegate.swift in Sources */,
-				ECD835E3261D49A60080FC96 /* APIError.swift in Sources */,
+				EC8A0A82261E972B00221218 /* String.swift in Sources */,
+				EC8A0A72261E85F400221218 /* DataService.swift in Sources */,
+				EC8A0A7E261E90C200221218 /* MainDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

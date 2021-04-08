@@ -12,7 +12,6 @@ struct Default {
     
     enum Key: String {
         case post
-        case serverType
     }
     
     static func destroySession(){

@@ -17,7 +17,7 @@ class BaseViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureBackButton(title: "")
+        //configureBackButton(title: "")
         configureBackgroundLoadingView()
     }
     

@@ -8,25 +8,25 @@
 import UIKit
 import Alamofire
 import ObjectMapper
+import RealmSwift
 
 struct PostStore {
-    
-    func postRouter() -> Router {
-        let request = PostRouter.post
-        return request
-    }
-    
-    func fecthPost( _ completion: @escaping(_ post: Post?) -> Void) {
-        AF.request(postRouter()).validate().responseJSON { response in
+
+    func fecthPost( _ completion: @escaping(_ post: [Post]?) -> Void) {
+        guard let url = URL(string: "\(DataService.sharedInstance.baseUrl)/posts") else { return }
+        AF.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
-                if let value = value  as? [String: Any] {
-                    let post = Mapper<Post>().map(JSON: value)
-                    DispatchQueue.main.async{
-                        completion(post)
+                if let value = value as? [[String: Any]] {
+                    DispatchQueue.main.async {
+                        let posts = Mapper<Post>().mapArray(JSONArray: value)
+                        let defaults = UserDefaults.standard
+                        defaults.removeObject(forKey: Default.Key.post.rawValue)
+                        Default.save(posts: posts.toJSON())
+                        completion(posts)
                     }
                 } else {
-                    DispatchQueue.main.async{
+                    DispatchQueue.main.async {
                         completion(nil)
                     }
                 }
