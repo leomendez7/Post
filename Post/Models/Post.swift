@@ -7,13 +7,16 @@
 
 import UIKit
 import ObjectMapper
+import RealmSwift
 
 public struct Post: Mappable {
     
-    public var id: Double = 0
-    public var userId: Double = 0
+    public var id: Int = 0
+    public var userId: Int = 0
     public var title: String = ""
     public var body: String = ""
+    public var favorite: Bool = false
+    public var read: Bool = true
     
     public init?(map: Map) {}
     public init() {}
@@ -23,6 +26,9 @@ public struct Post: Mappable {
         userId <- map["userId"]
         title <- map["title"]
         body <- map["body"]
+        favorite <- (map["favorite"], BoolTransform())
+        read <- (map["read"], BoolTransform())
     }
     
 }
+
