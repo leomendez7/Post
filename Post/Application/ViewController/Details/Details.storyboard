@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4d-WV-q1j">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DETAILS-->
+        <scene sceneID="seb-AS-hF2">
+            <objects>
+                <viewController id="X4d-WV-q1j" customClass="DetailsViewController" customModule="Post" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6F-6c-BAK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="siC-GD-cB6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VVP-Wv-XVM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y94-8E-sTb">
+                                                <rect key="frame" x="16" y="16" width="382" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JxO-vG-18t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="41"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN1-wa-jY2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                <color key="textColor" name="LaunchBackground"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5W-xM-g1D">
+                                                                <rect key="frame" x="0.0" y="20.5" width="382" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-Cz-sGC">
+                                                <rect key="frame" x="16" y="65" width="382" height="147"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="riG-wd-F6m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="147"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gns-FQ-Gc0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                                                <color key="textColor" name="LaunchBackground"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="apJ-KD-kxO">
+                                                                <rect key="frame" x="0.0" y="24" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib5-m3-AsL">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="88" id="159-5x-Kis"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afg-AM-PRe">
+                                                                        <rect key="frame" x="90" y="0.0" width="292" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HHX-oT-JnL">
+                                                                <rect key="frame" x="0.0" y="44.5" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypk-bN-BDF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="46" id="Dda-yq-yMA"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="userNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxE-es-qqm">
+                                                                        <rect key="frame" x="48" y="0.0" width="334" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BoB-Gn-gab">
+                                                                <rect key="frame" x="0.0" y="65" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PII-Nd-Ftp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="64" id="h4J-s8-og4"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="addressLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a18-CB-0GM">
+                                                                        <rect key="frame" x="66" y="0.0" width="316" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-nT-osI">
+                                                                <rect key="frame" x="0.0" y="85.5" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12K-lZ-Yz5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="52" id="LwH-ex-HHO"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="phoneLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6i-Mh-u5h">
+                                                                        <rect key="frame" x="54" y="0.0" width="328" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="o9E-3G-GUk">
+                                                                <rect key="frame" x="0.0" y="106" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-1T-iLT">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="9tM-uY-Qup"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="websiteLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oQ-nB-UHL">
+                                                                        <rect key="frame" x="67" y="0.0" width="315" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ODF-r1-fuB">
+                                                                <rect key="frame" x="0.0" y="126.5" width="382" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vc-jU-ZIw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="76" id="NFn-jP-tTE"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackground"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="websiteLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shN-vR-bym">
+                                                                        <rect key="frame" x="78" y="0.0" width="304" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                                                        <color key="textColor" name="LaunchBackgroundWithAlpha"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="8" right="16"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vTP-tm-dj1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTP-tm-dj1" firstAttribute="trailing" secondItem="siC-GD-cB6" secondAttribute="trailing" id="6cs-Wo-uwg"/>
+                            <constraint firstItem="siC-GD-cB6" firstAttribute="top" secondItem="vTP-tm-dj1" secondAttribute="top" id="Iuc-aT-gXB"/>
+                            <constraint firstItem="vTP-tm-dj1" firstAttribute="bottom" secondItem="siC-GD-cB6" secondAttribute="bottom" id="d1V-OF-y79"/>
+                            <constraint firstItem="siC-GD-cB6" firstAttribute="leading" secondItem="vTP-tm-dj1" secondAttribute="leading" id="oyu-Qz-lkq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DETAILS" id="dUa-nq-xcf"/>
+                    <connections>
+                        <outlet property="bodyPostLabel" destination="B5W-xM-g1D" id="1IB-3C-wdw"/>
+                        <outlet property="titlePostLabel" destination="NN1-wa-jY2" id="Ec3-yK-Yxp"/>
+                        <outlet property="userAddressLabel" destination="a18-CB-0GM" id="rhi-Ro-TB2"/>
+                        <outlet property="userCompanyLabel" destination="shN-vR-bym" id="rqr-je-Ua1"/>
+                        <outlet property="userEmailLabel" destination="MxE-es-qqm" id="OEp-or-VyG"/>
+                        <outlet property="userNameLabel" destination="Gns-FQ-Gc0" id="QoZ-C3-oWS"/>
+                        <outlet property="userPhoneLabel" destination="i6i-Mh-u5h" id="3aE-bf-7S3"/>
+                        <outlet property="userUserNameLabel" destination="afg-AM-PRe" id="p3b-zI-Nso"/>
+                        <outlet property="userWebsiteLabel" destination="7oQ-nB-UHL" id="KLV-SR-AZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQk-35-oKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="LaunchBackground">
+            <color red="0.058823529411764705" green="0.19607843137254902" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LaunchBackgroundWithAlpha">
+            <color red="0.058823529411764705" green="0.19607843137254902" blue="0.27058823529411763" alpha="0.64999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

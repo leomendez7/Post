@@ -17,7 +17,6 @@ class BaseViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //configureBackButton(title: "")
         configureBackgroundLoadingView()
     }
     
@@ -80,21 +79,7 @@ class BaseViewController: UIViewController, CLLocationManagerDelegate {
         backgroundLoadingView.isHidden = true
     }
     
-    public func addBackButton2() {
-        navigationController?.navigationBar.tintColor = ColorScheme.launchBackground
-        navigationController?.navigationBar.backgroundColor = .white
-        let closeButton = UIBarButtonItem(image: #imageLiteral(resourceName: "icon_back"), style: .plain, target: self, action: #selector(back))
-        navigationItem.leftBarButtonItem = closeButton
-    }
-    
     public func addCloseButton() {
-        navigationController?.navigationBar.tintColor = ColorScheme.launchBackground
-        navigationController?.navigationBar.backgroundColor = .white
-        let closeButton = UIBarButtonItem(image: #imageLiteral(resourceName: "icon_close"), style: .done, target: self, action: #selector(close))
-        navigationItem.leftBarButtonItem = closeButton
-    }
-    
-    public func addCloseButton2() {
         navigationController?.navigationBar.tintColor = ColorScheme.launchBackground
         navigationController?.navigationBar.backgroundColor = .white
         let closeButton = UIBarButtonItem(image: #imageLiteral(resourceName: "icon_close"), style: .done, target: self, action: #selector(close))

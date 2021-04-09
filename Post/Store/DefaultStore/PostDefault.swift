@@ -19,4 +19,14 @@ extension Default {
         defaults.set(posts, forKey: Default.Key.post.rawValue)
     }
     
+    static func favorite() -> [[String: Any]]? {
+        let defaults = UserDefaults.standard
+        return defaults.object(forKey: Default.Key.favorite.rawValue) as? [[String: Any]]
+    }
+    
+    static func save(favorite: [[String: Any]]!) {
+        let defaults = UserDefaults.standard
+        defaults.set(favorite, forKey: Default.Key.favorite.rawValue)
+    }
+    
 }

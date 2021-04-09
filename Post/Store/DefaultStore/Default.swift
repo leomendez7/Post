@@ -12,11 +12,14 @@ struct Default {
     
     enum Key: String {
         case post
+        case user
+        case favorite
     }
     
     static func destroySession(){
         let defaults = UserDefaults.standard
         defaults.removeObject(forKey: Key.post.rawValue)
+        defaults.removeObject(forKey: Key.user.rawValue)
     }
 
 }

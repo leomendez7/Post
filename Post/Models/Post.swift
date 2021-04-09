@@ -9,20 +9,19 @@ import UIKit
 import ObjectMapper
 import RealmSwift
 
-class Post: Object, Mappable {
+public struct Post: Mappable {
     
-    @objc public var id: Double = 0
-    @objc public var userId: Double = 0
-    @objc public var title: String = ""
-    @objc public var body: String = ""
-    @objc public var favorite: Bool = false
-    @objc public var read: Bool = false
+    public var id: Int = 0
+    public var userId: Int = 0
+    public var title: String = ""
+    public var body: String = ""
+    public var favorite: Bool = false
+    public var read: Bool = false
     
-    required convenience init?(map: Map) {
-        self.init()
-    }
+    public init?(map: Map) {}
+    public init() {}
     
-    public func mapping(map: Map){
+    public mutating func mapping(map: Map){
         id <- map["id"]
         userId <- map["userId"]
         title <- map["title"]
