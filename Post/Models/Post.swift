@@ -16,7 +16,7 @@ public struct Post: Mappable {
     public var title: String = ""
     public var body: String = ""
     public var favorite: Bool = false
-    public var read: Bool = false
+    public var read: Bool = true
     
     public init?(map: Map) {}
     public init() {}

@@ -36,6 +36,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate, Favori
     }
     
     func addFavorite(_ potition: Int) {
+        showFavorites = false
         var favorite = posts[potition]
         favorite.favorite = true
         favorites.append(favorite)
@@ -45,27 +46,39 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate, Favori
     }
     
     func removeFavorite(_ postId: Int) {
-        var favorite = tableData.filter { $0.id == postId }
-        favorite[0].favorite = false
-        Default.save(favorite: favorites.toJSON())
-        updateFavorites()
-        if let index = favorites.firstIndex(where: { $0.id == favorite[0].id }) {
+        if let index = favorites.firstIndex(where: { $0.id == postId }) {
             favorites.remove(at: index)
         }
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: Default.Key.favorite.rawValue)
         Default.save(favorite: favorites.toJSON())
+        updateFavorites()
         tableView.reloadData()
     }
     
     func updateFavorites() {
         guard let objects = Default.favorite() else { return }
         guard let favorites = Mapper<Post>().mapArray(JSONObject: objects) else { return }
-        for favorite in favorites {
-            if let row = self.posts.firstIndex(where: { $0.id == favorite.id }) {
-                posts[row] = favorite
+        self.favorites.removeAll()
+        self.favorites = favorites
+        if favorites.count == 0 {
+            if let row = self.posts.firstIndex(where: { $0.favorite == true }) {
+                posts[row].favorite = false
+            }
+        } else {
+            for favorite in favorites {
+                if let row = self.posts.firstIndex(where: { $0.id == favorite.id }) {
+                    posts[row] = favorite
+                }
             }
         }
         tableData.removeAll()
-        tableData = self.posts
+        if showFavorites {
+            tableData = self.favorites
+        } else {
+            tableData = posts
+        }
+        emptyImage.isHidden = tableData.count == 0 ? false : true
     }
     
 }

@@ -23,6 +23,7 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet var backgroundCellView: UIView!
     @IBOutlet var addFavoriteButton: UIButton!
     @IBOutlet var removeFavoriteButton: UIButton!
+    @IBOutlet var readLabel: UILabel!
     
     override func awakeFromNib() {
         
@@ -38,13 +39,9 @@ class MainTableViewCell: UITableViewCell {
         } else {
             backgroundCellView.backgroundColor = ColorScheme.ligthGrayView
         }
-        if post.favorite {
-            removeFavoriteButton.isHidden = false
-            addFavoriteButton.isHidden = true
-        } else {
-            removeFavoriteButton.isHidden = true
-            addFavoriteButton.isHidden = false
-        }
+        removeFavoriteButton.isHidden = !post.favorite
+        addFavoriteButton.isHidden = post.favorite
+        readLabel.isHidden = post.read
     }
 
     @IBAction func addFavorite(_ sender: Any) {

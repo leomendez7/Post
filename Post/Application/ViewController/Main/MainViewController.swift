@@ -30,12 +30,14 @@ class MainViewController: BaseViewController {
                 }
             }
             tableData = self.posts
+            emptyImage.isHidden = tableData.count == 0 ? false : true
             tableView.reloadData()
         }
     }
     
     @IBOutlet var tableView: UITableView!
-    @IBOutlet weak var showFavoriteButton: UIBarButtonItem!
+    @IBOutlet var showFavoriteButton: UIBarButtonItem!
+    @IBOutlet var emptyImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,7 @@ class MainViewController: BaseViewController {
         guard let favorites = Mapper<Post>().mapArray(JSONObject: objects) else { return }
         self.favorites = favorites
         tableData = self.favorites
+        emptyImage.isHidden = tableData.count == 0 ? false : true
         tableView.reloadData()
     }
     

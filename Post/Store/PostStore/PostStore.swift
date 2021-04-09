@@ -19,7 +19,10 @@ struct PostStore {
             case .success(let value):
                 if let value = value as? [[String: Any]] {
                     DispatchQueue.main.async {
-                        let posts = Mapper<Post>().mapArray(JSONArray: value)
+                        var posts = Mapper<Post>().mapArray(JSONArray: value)
+                        for i in 0...19 {
+                            posts[i].read = false
+                        }
                         let defaults = UserDefaults.standard
                         defaults.removeObject(forKey: Default.Key.post.rawValue)
                         Default.save(posts: posts.toJSON())
